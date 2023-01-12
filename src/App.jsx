@@ -1,15 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+import { useState , useEffect} from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import MovieList from './components/MovieList';
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
+const API_URL = 'https://api.themoviedb.org/3/movie/550?api_key=88c1d19be3079c6ade78443d397567f5'
+
+const App = () => {
+
+  const [movies, setMovies] = useState([]);
+
+  useEffect(() => {
+    fetch(API_URL)
+    .then((res) => res.json())
+    .then(data=>{
+      setMovies(data.results)
+    })
+
+  },[])
 
   return (
-    <div className="App">
-      <div>
- Test
-    </div>
+
+  <div>
+    {movies.map((movie) => <MovieList key={movie.id} {...movie}/>)}
+  </div>
+
   )
 }
 
