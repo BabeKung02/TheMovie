@@ -1,14 +1,22 @@
-import React from 'react'
+import react from "react";
 
-const API_IMG ="https://Image.tmdb.org/t/p/w500/"
+const MovieList=(movie)=>{
 
-const MovieList = ({title , poster_path}) => {
-  return (
-    <div>
-        <h1>{title}</h1>
-        <img src={API_IMG+poster_path}></img>
-    </div> 
-  );
-};
+    let img_path="https://image.tmdb.org/t/p/w500";
+    let price = '200 Bath'
 
-export default MovieList
+    return(
+        <div>
+            <div className="movie">
+                <img src={img_path + movie.info.poster_path} className="poster"></img>
+                <div className="movie-details">
+                    <div className="box">
+                        <h4 className="title">{movie.info.title}</h4>
+                        <button className="price">{price}</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
+export default MovieList;
