@@ -166,8 +166,140 @@ nav ul li a:focus::before{
         width: 200px;
         margin-right: 100px;
     }
-}
 .notfound{
-    font-size: 40px;
+    font-size: 45px;
     font-weight: bold;
 }
+}
+@media (max-width:850px){
+    .header{
+        background-color: var(--secondary-color);
+        height:90px;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: column;
+    }
+    nav ul li{
+        padding-top: 10px;
+        margin-left: 130px;
+    }
+    .search-btn{
+        width: 200px;
+        margin-right: 260px;
+    }
+    .notfound{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .span1{
+        margin-right: 36px;
+}
+}
+@media (max-width:650px){
+    .header{
+        background-color: var(--secondary-color);
+        height: 90px;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: column;
+    }
+    nav ul li{
+        padding-top: 10px;
+        margin-left: 55px;
+    }
+    .search-btn{
+        width: 100px;
+        margin-right: 330px;
+    }
+    .notfound{
+    font-size: 30px;
+    font-weight: bold;
+    }
+    .span1{
+        margin-right: 40px;
+    }
+}
+
+@media (max-width:650px){
+    .header{
+        background-color: var(--secondary-color);
+        height: 90px;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: column;
+    }
+    nav ul li{
+        padding-top: 10px;
+        margin-left: 55px;
+    }
+    .search-btn{
+        width: 100px;
+        margin-right: 330px;
+    }
+    .notfound{
+    font-size: 30px;
+    font-weight: bold;
+    }
+    .span1{
+        margin-right: 40px;
+    }
+}
+@media (max-width:625px){
+    .header{
+        background-color: var(--secondary-color);
+        height: 90px;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: column;
+    }
+    nav ul li{
+        padding-top: 10px;
+        margin-left: -20px;
+    }
+    .search-btn{
+        width: 100px;
+        margin-right: 240px;
+    }
+    .notfound{
+    font-size: 25px;
+    font-weight: bold;
+    }
+    .span1{
+        margin-right: 40px;
+    }
+}
+
+@media (max-width:510px){
+    .header{
+        background-color: var(--secondary-color);
+        height: 80px;
+       
+    }
+    nav ul{
+        display: flex;
+        flex-direction: column;
+    }
+    nav ul li{
+        padding-top: 10px;
+        margin-left: 20px;
+        
+    }
+    .search-btn{
+        width: 0px;
+        margin-right: 200px;
+    }
+    .notfound{
+    font-size: 30px;
+    font-weight: bold;
+    }
+    .span1{
+        position: relative;
+        left: 200px;
+    }
+}
+
+
