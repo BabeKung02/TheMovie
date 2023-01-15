@@ -16,6 +16,8 @@ How to Use The Movie App
 
 1.This website that can search for the title of the movie you want with search box .
 
+This project I am trying to make a shopping cart to be able to order products soon.
+
 This is my UserInterface Website
 
 ![image](https://user-images.githubusercontent.com/115159423/212528879-cc429e1f-60ce-48f1-a091-33a8b8594964.png)
