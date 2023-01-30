@@ -20,6 +20,6 @@ This is my UserInterface Website
 
 ![image](https://user-images.githubusercontent.com/115159423/212528879-cc429e1f-60ce-48f1-a091-33a8b8594964.png)
 
-My Web Deploy : https://babethemoviedb.netlify.app/
+My Web Deploy : https://babethemovie.netlify.app/
 
 Thank you.
