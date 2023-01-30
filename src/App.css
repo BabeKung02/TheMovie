@@ -119,37 +119,6 @@ nav ul li a:focus::before{
   
 }
 
-.price{
-    background-color: var(--primary-color);
-    width: 120px;
-    height: 35px;
-    border-radius: 10%;
-    font-weight: bold;
-    border: 1px solid var(--primary-color);
-    box-shadow: inset 0 8px 6px rgba(0,0,0,0.4);
-    position: relative;
-    left: 50px;
-    margin-top: 20px;
-    cursor: pointer;
-
-}
-.cart {
-    cursor: pointer;
-  }
-  .span1 {
-    font-size: 1.8rem;
-    color: white;
-  }
-  .span2 {
-    padding: 0 3px;
-    background-color: red;
-    color: white;
-    font-weight: bold;
-    border-radius: 8px;
-    font-size: 1.1rem;
-    position: relative;
-    top: -15px;
-  }
 @media (max-width:900px){
     .header{
         background-color: var(--secondary-color);
@@ -169,8 +138,9 @@ nav ul li a:focus::before{
 .notfound{
     font-size: 45px;
     font-weight: bold;
+    }
 }
-}
+
 @media (max-width:850px){
     .header{
         background-color: var(--secondary-color);
@@ -192,10 +162,8 @@ nav ul li a:focus::before{
         font-size: 30px;
         font-weight: bold;
     }
-    .span1{
-        margin-right: 36px;
 }
-}
+
 @media (max-width:650px){
     .header{
         background-color: var(--secondary-color);
@@ -214,11 +182,8 @@ nav ul li a:focus::before{
         margin-right: 330px;
     }
     .notfound{
-    font-size: 30px;
-    font-weight: bold;
-    }
-    .span1{
-        margin-right: 40px;
+        font-size: 30px;
+        font-weight: bold;
     }
 }
 
@@ -240,11 +205,8 @@ nav ul li a:focus::before{
         margin-right: 330px;
     }
     .notfound{
-    font-size: 30px;
-    font-weight: bold;
-    }
-    .span1{
-        margin-right: 40px;
+        font-size: 30px;
+        font-weight: bold;
     }
 }
 @media (max-width:625px){
@@ -265,11 +227,8 @@ nav ul li a:focus::before{
         margin-right: 240px;
     }
     .notfound{
-    font-size: 25px;
-    font-weight: bold;
-    }
-    .span1{
-        margin-right: 40px;
+        font-size: 25px;
+            font-weight: bold;
     }
 }
 
@@ -295,10 +254,6 @@ nav ul li a:focus::before{
     .notfound{
     font-size: 30px;
     font-weight: bold;
-    }
-    .span1{
-        position: relative;
-        left: 200px;
     }
 }
 

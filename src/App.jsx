@@ -1,7 +1,6 @@
 import React, {useState , useEffect} from "react";
 import MovieList from "./components/MovieList";
 import './App.css';
-import Cart from "./components/Cart";
 
 let Logo = ["BabeMovie"];
 let API_key="&api_key=88c1d19be3079c6ade78443d397567f5";
@@ -12,19 +11,14 @@ const App = () => {
     const [movieData,setData] = useState([]);
     const [url_set,setUrl] = useState(url);
     const [search,setSearch] = useState();
-    const [show,setShow] = useState(true);
 
     useEffect(()=>{
         fetch(url_set).then(res=>res.json()).then(data=>{
             setData(data.results);
+            setUrl(url);
         });
     },[url_set])
 
-    const getData=(movieType)=>{
-
-        setUrl(url);
-
-    }
     const searchMovie=(e)=>{
         if(e.key=="Enter")
         {
@@ -41,7 +35,7 @@ const App = () => {
               <ul>
                   {Logo.map((value,index)=>{ 
                     return(
-                        <li><a href="#" key={index} name={value} onClick = {(e)=>{getData(e.target.name)}}>{value} </a></li>
+                        <li><a href="#" key={index} name={value}>{value} </a></li>
                     )   
                 })
             }
@@ -54,14 +48,8 @@ const App = () => {
             value={search} onKeyPress={searchMovie}>
             </input>
         
-              <button><i className="fas fa-search"></i></button>
+            <button><i className="fas fa-search"></i></button>
                 
-                <div className="cart" onClick={(e) => setShow(false) } >
-                  <span className="span1">
-                    <i className="fas fa-cart-plus" ></i>
-                  </span>
-                      
-                </div>
             </div>  
     </div>
     
@@ -70,7 +58,7 @@ const App = () => {
                     
                     (movieData.length==0)?<p className="notfound">Not Found</p>: movieData.map((item,index)=>{
                         return(
-                            show ? <MovieList info={item} key={index}/> : <Cart/>
+                            <MovieList info={item} key={index}/>
                         
                         )
                     })
